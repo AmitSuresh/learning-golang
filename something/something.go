@@ -17,9 +17,12 @@ func main() {
 }
 
 func foo() {
-	fmt.Println("I'm in foo")
+	n, e := fmt.Println("I'm in foo")
+	fmt.Println(n)
+	fmt.Println(e)
 }
 
 func bar() {
-	fmt.Println("and then we exit")
+	n, _ := fmt.Println("and then we exit")
+	fmt.Println(n)
 }
