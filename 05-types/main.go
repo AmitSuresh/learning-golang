@@ -12,18 +12,18 @@ var a = `Let us check out "Raw String Literal"`
 
 func main() {
 	fmt.Println(y)
-	fmt.Printf("%T\n", y)
+	fmt.Printf("15...%T\n", y)
 	fmt.Println(z)
-	fmt.Printf("%T\n", z)
+	fmt.Printf("17...%T\n", z)
 	fmt.Println(a)
-	fmt.Printf("%T\n", a)
+	fmt.Printf("19...%T\n", a)
 	type Dictionary map[string]interface{}
 	data := []Dictionary{}
 	dict1 := map[string]interface{}{"key": 1}
 	dict2 := Dictionary{"key": 2}
 	data = append(data, dict1, dict2)
-	fmt.Printf("\n%v\n",dict1)
-	fmt.Printf("\n%v",data)
+	fmt.Printf("25...\n%v\n",dict1)
+	fmt.Printf("26...\n%v",data)
 	
 	//type Dictionary map[string]interface{}
 
@@ -56,7 +56,7 @@ func main() {
 	if err !=nil {
 		panic(err)
 	}
-
+	fmt.Printf("\n\n59.....Type of buf:%T\n\n....Value of buf:%v\n\n....Type of buf:%T\n\n....Value of buf:%T\n\n",buf, buf, err, err)
 	jsonString := string(buf)
 	fmt.Println(jsonString)
 
