@@ -1,0 +1,1 @@
+[{"metrics":[{"id":3,"tag_name":"output_current"},{"id":2,"tag_name":"input_voltage"}],"port":161,"sleep_time":5,"timeout":1},{"metrics":[{"id":10,"tag_name":"destructor"}],"port":161,"sleep_time":4,"timeout":1}]
