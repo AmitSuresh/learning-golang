@@ -21,5 +21,30 @@ func main() {
 			fmt.Printf("string_number: %v, string_value: %v\n\n", string_number, string_value)
 		}
 	}
+	z := map[string]map[string][]string{
+		`map1`: y,
+	}
+	fmt.Println(z)
+
+	for key_string_of_map, value_slice_of_map := range z {
+		fmt.Printf("\nkey_string_of_map: %v\nvalue_slice_of_map:%v\n\n", key_string_of_map, value_slice_of_map)
+		for string_number, string_value := range value_slice_of_map {
+			fmt.Printf("string_number: %v, string_value: %v\n\n", string_number, string_value)
+		}
+	}
+	a := map[string]map[string]map[string][]string{
+		`outermap1`: z,
+	}
+	fmt.Println(a)
+
+	for key_string_of_map, value_slice_of_map := range a {
+		fmt.Printf("\nkey_string_of_map: %v\nvalue_slice_of_map:%v\n\n", key_string_of_map, value_slice_of_map)
+		for string_number, string_value := range value_slice_of_map {
+			fmt.Printf("string_number: %v, string_value: %v\n\n", string_number, string_value)
+			for string_number, string_value := range string_value {
+				fmt.Printf("string_number: %v, string_value: %v\n\n", string_number, string_value)
+			}
+		}
+	}
 
 }
