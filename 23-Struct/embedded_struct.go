@@ -17,8 +17,8 @@ type character struct {
 func main() {
 
 	cyb := character{
-		person: person{
-			first_name: "",
+		person: person{ // unqualified type name acts as the field name.
+			first_name: "", // these cannot be used as field names in composite literal of the struct.
 			last_name:  "Welles",
 			age:        35,
 		},
@@ -58,7 +58,7 @@ func main() {
 	fmt.Printf("Person1 is: %v\nPerson2 is: %v\n", person1, person2)
 	fmt.Printf("\nMr %v is %v-years old.", person1.last_name, person1.age)
 	fmt.Printf("\nMr %v is %v-years old.", person2.last_name, person2.age)
-	fmt.Printf("\nMr %v is %v-years old. The game %v is %v-years old.", cyb.last_name, cyb.person.age, cyb.game, cyb.age)	// when the inner type and outer type share the same key, outer one takes priority.
+	fmt.Printf("\nMr %v is %v-years old. The game %v is %v-years old.", cyb.last_name, cyb.person.age, cyb.game, cyb.age) // when the inner type and outer type share the same key, outer one takes priority.
 	fmt.Printf("\nMr %v of %v is %v-years old.", cyb1.first_name, cyb1.game, cyb1.age)
 	fmt.Printf("\nMr %v of %v is %v-years old.", cyb2.first_name, cyb2.game, cyb2.age)
 	fmt.Printf("\nMr %v of %v is %v-years old.", wit.first_name, wit.game, wit.age)
