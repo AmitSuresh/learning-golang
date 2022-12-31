@@ -9,7 +9,16 @@ func main() {
 		reason     []string
 		skillLevel map[string]int
 	}{
-		"Amit", true, []string{"Taking too long", "Talking too slow"}, map[string]int{"Python": 9, "Go": 8},
+		"Amit",
+		true,
+		[]string{
+			"Taking too long",
+			"Talking too slow",
+		},
+		map[string]int{
+			"Python": 9,
+			"Go":     8,
+		},
 	}
 
 	fmt.Printf("Who is angry?\n\t%v\nIs he angry now?\n\t%v\nWhy is he angry?\n", x.who, x.angry)
