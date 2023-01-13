@@ -103,6 +103,16 @@ func main() {
 
 	jsonString1 := string(buf1)
 	fmt.Println(jsonString1)
-	
+
+	fmt.Println()
+	data123 := []Data{}
+	err123 := json.Unmarshal([]byte(buf1), &data123)
+	if err123 != nil {
+		fmt.Printf("could not unmarshal json: %s\n", err123)
+		return
+	}
+
+	fmt.Printf("json map: %v\n", data123)
+
 
 }
