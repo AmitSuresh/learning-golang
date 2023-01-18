@@ -52,7 +52,7 @@ func main() {
 	fmt.Println(users)
 
 	if err := json.NewEncoder(os.Stdout).Encode(users); err != nil {
-		fmt.Println("56.", err)
+		fmt.Println("55.", err)
 	}
 
 	fmt.Println("after 58.")

@@ -19,7 +19,8 @@ func foo(num ...int) int {
 }
 
 func bar(slice_of_int []int) int {
-	defer ex3()		// exercise 3
+	defer ex3() // exercise 3
+	gar()
 	sum_of_num := 0
 	for _, v := range slice_of_int {
 		sum_of_num += v
@@ -29,4 +30,11 @@ func bar(slice_of_int []int) int {
 
 func ex3() {
 	fmt.Println("defer is run.")
+}
+
+func gar() {
+	for i := 0; i < 11; i++ {
+		fmt.Printf("gar:%v\t", i)
+	}
+	fmt.Println()
 }
