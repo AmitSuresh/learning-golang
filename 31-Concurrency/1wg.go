@@ -6,7 +6,7 @@ import (
 	"sync"
 )
 
-var wg sync.WaitGroup
+var wg aitGroup
 var wg1 sync.WaitGroup
 
 func main() {
