@@ -3,14 +3,16 @@ package main
 import "fmt"
 
 type underlyingtype int
+
 var x underlyingtype
+
 type T1 string
 type T2 T1
 type T3 []T2
 type T4 T3
 
 func main() {
-	fmt.Printf("Value of x=%v, Type of x=%T\n",x ,x)
+	fmt.Printf("Value of x=%v, Type of x=%T\n", x, x)
 	x = 42
 	fmt.Printf("Types:\t%T\t%v", x, x)
 	var a T1 = "as"

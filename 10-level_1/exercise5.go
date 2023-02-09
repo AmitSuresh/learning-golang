@@ -3,8 +3,9 @@ package main
 import "fmt"
 
 type customtype string
+
 var x customtype
-var y string 
+var y string
 
 func main() {
 	fmt.Printf("Value and Type of x are:%v and %T", x, x)

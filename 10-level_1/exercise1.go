@@ -7,8 +7,8 @@ import (
 func main() {
 
 	x := 42
-	y:= "James Bond"
-	z:= true
+	y := "James Bond"
+	z := true
 
 	fmt.Printf("Value of x,: %v\n", x)
 	fmt.Printf("Value of y: %v\n", y)
