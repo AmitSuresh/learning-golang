@@ -6,6 +6,7 @@
 # Folders
 _obj
 _test
+go.work
 
 # Architecture specific extensions/prefixes
 *.[568vq]
