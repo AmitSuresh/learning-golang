@@ -2,7 +2,7 @@ package main
 
 import "testing"
 
-func TestMySumStruc(t *testing.T) {
+func TestMySums(t *testing.T) {
 	type test1 struct {
 		data   []int
 		answer int
